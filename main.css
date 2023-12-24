@@ -1,0 +1,267 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+#bodyindex{
+  background-image: url('image/gal/9.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#bodyc5::before{
+  content: '';
+  position: fixed;
+  left: 0;right: 0;
+  top: 0;bottom: 0;
+  z-index: -1;
+  background-image: url('image/gal/8.jpg');
+  filter: blur(5px);
+}
+#bodyc4{
+  background-color: #2A4480;
+}
+#bodyc2{
+  background-color: #2A4480;
+}
+#bodyc3{
+  background-color: #2A4480;
+}
+a{
+  color: white;
+}
+/*начало меню*/
+header{
+  position:fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #1240AB;
+  display: flex;
+  justify-content:
+  space-between;
+  align-items: center;
+  padding: 0 8%;
+}
+header .logo{
+  font-size: 20px;
+  font-weight: 900;
+  transition: .5s;
+}
+header .logo:hover{
+  transform: scale(1.2);
+}
+
+header nav ul li{
+  position: relative;
+  float: left;
+}
+header nav ul li a{
+  padding: 15px;
+  font-size: 16px;
+  display: block;
+}
+header nav ul li a:hover{
+  background-color: red;
+}
+
+nav ul li ul{
+  position: absolute;
+  left: 0;
+  width: 180px;
+  background-color: #1240AB;
+  display: none;
+}
+nav ul li ul li{
+  width: 100%;
+  border: 1px solid rgba(0,0,0,.1);
+}
+
+nav ul li ul li ul{
+  left: 180px;
+  top: 0;
+}
+nav ul li:hover > ul{
+  display: initial;
+}
+/*конец меню*/
+
+.text1{
+  background-color: #1240AB;
+  width: 50%;
+  height: 65%;
+  margin-left: 5%;
+  margin-top: 10%;
+  border-radius: 5%;
+  border: 3px solid #1240AB;
+  font-size: 20px;
+  color: white;
+}
+
+.footer p{
+  font-size: 40px;
+  float: left;
+}
+.footer{
+  width: 100%;
+  background-color: #1240AB;
+  width: 100%;
+  height: 90px;
+  color: white;
+  margin-top: 13%;
+}
+#footersl{
+  margin-top: 55%;
+  width: 100%;
+  background-color: #1240AB;
+  width: 100%;
+  height: 90px;
+  color: white;
+}
+#footersl p{
+  font-size: 40px;
+  float: left;
+}
+.knopka{
+  color: #fff;
+  text-decoration: none;
+  user-select: none;
+}
+a.knopka:hover {
+   background: red;
+ }
+
+ .knopkafooter{
+   color: #fff;
+   text-decoration: none;
+   user-select: none;
+   font-size: 20px;
+   float: right;
+   margin-right: 15px;
+   margin-top: 5px;
+   border: 2px solid #1240AB;
+   transition: .4s
+ }
+ a.knopkafooter:hover {
+    background: red;
+    transform: scale(1.2);
+  }
+
+ /*слайдер*/
+.slider{
+  width: 1100px;
+  height: 600px;
+  overflow: hidden;
+  border: 10px solid #1240AB;
+}
+.middle{
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.navigation{
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+.bar{
+  height: 8px;
+  width: 30px;
+  margin: 6px;
+  cursor: pointer;
+  background-color: red;
+  opacity: .7;
+  border-radius: 10px;
+  transition: all .4s ease;
+}
+.bar:hover{
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+input[name="r"]{
+  position: absolute;
+  visibility: hidden;
+}
+
+.slides{
+  width: 400%;
+  height: 100%;
+  display: flex;
+}
+.slide{
+  width: 25%;
+  transition: all .6s ease;
+}
+.slide img{
+  width: 100%;
+  height: 100%;
+}
+#r1:checked~.s1{
+  margin-left: 0;
+}
+#r2:checked~.s1{
+  margin-left: -25%;
+}
+#r3:checked~.s1{
+  margin-left: -50%;
+}
+#r4:checked~.s1{
+  margin-left: -75%;
+}
+/*конец слайдера*/
+
+
+.galImg{
+  width: 1000px;
+  height: 500px;
+  position: relative;
+  margin-top: 70px;
+  margin-left: 300px;
+}
+#img2str{
+  width: 700px;
+  height: 500px;
+  position: absolute;
+  left: 54%;
+  top: 26%;
+  border-radius: 5%;
+}
+#text2str2{
+  background-color: #1240AB;
+  width: 50%;
+  height: 65%;
+  margin-left: 50px;
+  margin-top: 130px;
+  border-radius: 5%;
+  border: 3px solid #1240AB;
+  font-size: 20px;
+  color: white;
+}
+#text1str2{
+  background-color: #1240AB;
+  width: 50%;
+  height: 65%;
+  margin-left: 50px;
+  margin-top: 10px;
+  border-radius: 5%;
+  border: 3px solid #1240AB;
+  font-size: 20px;
+  color: white;
+}
+#text1str3{
+  background-color: #1240AB;
+  width: 50%;
+  height: 65%;
+  margin-left: 50px;
+  margin-top: 130px;
+  border-radius: 5%;
+  border: 3px solid #1240AB;
+  font-size: 20px;
+  color: white;
+}
